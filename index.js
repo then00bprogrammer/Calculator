@@ -15,7 +15,8 @@ for(item of buttons){
             screen.value=screenValue;
         }
         else if(buttonText=='='){
-           screen.value=eval(screenValue); 
+           screen.value=eval(screenValue);
+            screenValue=screen.value;
         }
         else if(buttonText=='D'){
             screenValue=screenValue.slice(0,(screenValue.length)-1);
